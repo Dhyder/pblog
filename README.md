@@ -6,7 +6,7 @@
 A personal blogging website where you can create and share your opinions and other users can read and comment on them.
 
 ## Screenshot
-![RedBlog](https://user-images.githubusercontent.com/86789832/141854431-1d713d13-fcc4-459c-8618-8c5b49907af6.png)
+![RedBlog](https://user-images.githubusercontent.com/86789832/141859271-f0fb0362-fdd5-4c0c-9d45-dc924815ec6e.png)
 
 ## Live Link
 You can view the site at: [Red Blog](https://redblogger.herokuapp.com/)
