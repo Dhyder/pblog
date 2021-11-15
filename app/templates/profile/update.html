@@ -1,0 +1,49 @@
+{%extends "base.html"%}
+
+{%block content%}
+<br><br><br>
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div style="margin-bottom: 30px;" class="col-md-8">
+        <h3 style="text-align:center;">Update Info</h3>
+        <div class="thumbnail">
+          <!-- SIDEBAR USERPIC -->
+{%if user.avatar_path%}
+<div class="profile-userpic">
+  <img src="{{url_for('static',filename=user.avatar_path)}}" class="rounded-circle img-fluid img-thumbnail" alt=""
+    height="250" width="250">
+</div>
+{%else%}
+<div class="profile-userpic">
+  <img src="https://i.pinimg.com/236x/24/99/03/249903173ee16b3346ba320a24e56a8b--funny-facebook-facebook-com.jpg" class="rounded-circle img-fluid img-thumbnail" alt="" height="250" width="250">
+</div>
+{%endif%}
+</div>
+      {% if user == current_user %}
+      <form style="margin:10px" action="{{url_for('main.update_pic',id=user.id)}}" method="post"
+          enctype="multipart/form-data">
+          <input type="file" name="photo" class="form-control" required><br>
+          <input type="submit" class="btn btn-danger btn-sm">
+      </form>
+      
+        <form method="post">
+          {{form.hidden_tag()}}
+          {{form.first_name.label}} {{form.first_name(class = "form-control", value = user.first_name)}}
+          <br>
+          {{form.last_name.label}} {{form.last_name(class = "form-control", value = user.last_name)}}
+          <br>
+          {{form.email.label}} {{form.email(class = "form-control", value = user.email)}}
+          <br>
+          {{form.bio.label}} {{form.bio(class = "form-control", value = user.bio)}}
+          <br>
+          {{form.submit(class = "btn btn-danger")}}
+          {% endif %}
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+
+{%endblock%}
