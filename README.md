@@ -7,7 +7,8 @@ A personal blogging website where you can create and share your opinions and oth
 
 ## Screenshots
 ![RedBlog](https://user-images.githubusercontent.com/86789832/141859271-f0fb0362-fdd5-4c0c-9d45-dc924815ec6e.png)
-![Redblog](https://user-images.githubusercontent.com/86789832/141933180-34e28487-ef94-41c3-8577-ac2279a64b61.png)
+![RedBlog](https://user-images.githubusercontent.com/86789832/141933180-34e28487-ef94-41c3-8577-ac2279a64b61.png)
+![RedBlog](https://user-images.githubusercontent.com/86789832/141935143-66e019fa-b5c8-4cdd-864f-74964932e0ec.png)
 
 ## Live Link
 You can view the site at: [Red Blog](https://redblogger.herokuapp.com/)
